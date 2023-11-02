@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
-import Sidebar from '../components/sidebar';
+import Sidebar from '../components/Sidebar';
 import {IoIosArrowBack} from "react-icons/io"
 
 const ProjectDetails = () => {
