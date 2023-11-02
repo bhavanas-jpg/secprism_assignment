@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
+import {IoIosArrowDown} from "react-icons/io"
 
 const Sidebar = () => {
+ const [securityDropdown, setSecurityDropdown] = useState(false);
+ const [configureDropdown, setConfigureDropdown] = useState(false);
+
   return (
     <div>
       <ul className="sidebar">
@@ -17,14 +21,30 @@ const Sidebar = () => {
         <li>
           <NavLink className="sidebar__item">Releases</NavLink>
         </li>
+        <li onClick={()=>setSecurityDropdown(prev => !prev)}>
+          <NavLink className="sidebar__item">Security Activities</NavLink>
+          <IoIosArrowDown />
+        </li>
+        {securityDropdown && 
+        <div >
+            <p>Policies and Standards</p>
+            <p>Trainings and Awareness</p>
+          </div>
+        }
+        <li>
+          <NavLink className="sidebar__item">Security Deviations</NavLink>
+        </li>
+        <li onClick={()=>setConfigureDropdown(prev => !prev)}>
+          <NavLink className="sidebar__item">Configure</NavLink>
+          <IoIosArrowDown />
+        </li>
+        {configureDropdown  && 
+        <div >
+          <p>Email Templates</p>
+        </div>
+        }
       </ul>
 
-      <li>Security Activities</li>
-      <span>Policies and Standards</span>
-      <span>Trainings and Awareness</span>
-      <li>Security Deviations</li>
-      <li>Configure</li>
-      <span>Email Templates</span>
     </div>
   );
 };

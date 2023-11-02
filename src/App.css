@@ -1,5 +1,6 @@
 ul li{ 
   list-style: none;
+  padding: 7px 0;
 }
 
 .header__container{
@@ -38,10 +39,10 @@ ul li{
   left: 0;
 }
 .nav__item{
- flex: 0 10%;
+ flex: 0 15%;
 }
 .projectlist__sec{
-  flex: 0 90%;
+  flex: 0 80%;
 }
 .btn__container{
   display: flex;
@@ -70,13 +71,24 @@ input{
 .sidebar{
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 .back__arrow{
   cursor: pointer;
 }
 .sidebar__item{
   text-decoration: none;
+  color: rgb(23,37,66);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0;
 }
+.sidebar__item .active{
+  background-color:   rgb(23,37,66);
+  color: #fff;
+}
+
 /* .projectdetail__content{
   display: flex;
   justify-content: center;
