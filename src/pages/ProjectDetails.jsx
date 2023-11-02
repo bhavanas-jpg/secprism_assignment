@@ -26,21 +26,22 @@ const ProjectDetails = () => {
         <Sidebar />
       </div>
       <div className="projectlist__sec">
-      <p>Projects/<span>{project_name}</span></p>
-        <h2>Project details</h2>
+      <p className="project">Projects/<span className="project__selected">{project_name}</span></p>
+      <div className='projectdetail__sec'>
+      <h2>Project details</h2>
         <div className='projectdetail__content'>
           <p>Project ID: <span>{project_id}</span></p>
           <p>Project name: <span>{project_name}</span></p>
           <div >
             <p>Description:</p>
             <p className="description">{description}</p>
-
           </div>
-          
-          <p>Status: <span>{status}</span></p>
+          <p>Status: <span className={status=== "Active" ? "active__status" :"completed__status"}>{status}</span></p>
           <p>Current Release: <span>{current_release}</span></p>
           <p>Creation Details: <span>{current_details}</span></p>
         </div>
+      </div>
+        
         </div>
     </div>
   )

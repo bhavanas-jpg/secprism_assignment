@@ -6,6 +6,9 @@ ul li{
   background-color: rgb(23,37,66);
   color: #fff;
   display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 .header__list{
   flex: 0 90%;
@@ -28,6 +31,11 @@ ul li{
   background-color: rgb(245,249,255);
   display: flex;
   padding: 30px 15px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .nav__item{
  flex: 0 10%;
@@ -69,10 +77,50 @@ input{
 .sidebar__item{
   text-decoration: none;
 }
+/* .projectdetail__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.projectdetail__content{
+  padding: 10px 0 0;
+}
 .projectdetail__content div{
   display: inline-flex;
+}
+.projectdetail__content  p{
+  margin-bottom: 10px;
+  color: #b3b2b2;;
+}
+.projectdetail__content span{
+  color: #000;
 }
 .description{
   width: 600px;
   text-align: justify;
+  color:#000 !important;
+}
+.active__status{
+  color: green !important;
+}
+.completed__status{
+  color: #000 !important;
+}
+.projectdetail__sec{
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 13px;
+  border-radius: 5px;
+}
+.projectdetail__sec h2{
+  border-bottom: 1px solid #b3b2b2;
+  padding-bottom: 10px;
+}
+.project{
+  color: #b3b2b2;
+}
+.project__selected{
+  color: rgb(23,37,66);
+    font-weight: bold;
 }
