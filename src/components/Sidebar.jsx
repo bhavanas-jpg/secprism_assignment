@@ -2,15 +2,17 @@ import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import {IoIosArrowDown} from "react-icons/io"
 
-const Sidebar = () => {
+const Sidebar = ({id}) => {
  const [securityDropdown, setSecurityDropdown] = useState(false);
  const [configureDropdown, setConfigureDropdown] = useState(false);
 
   return (
     <div>
       <ul className="sidebar">
-        <li>
-          <NavLink className="sidebar__item">Overview</NavLink>
+        <li className="selected__list">
+          <NavLink 
+          to={`/projectDetails/${id}`}
+          className="sidebar__item">Overview</NavLink>
         </li>
         <li>
           <NavLink className="sidebar__item">Members</NavLink>

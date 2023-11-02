@@ -84,9 +84,11 @@ input{
   font-size: 18px;
   padding: 10px 0;
 }
-.sidebar__item .active{
+.selected__list .sidebar__item{
   background-color:   rgb(23,37,66);
   color: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* .projectdetail__content{

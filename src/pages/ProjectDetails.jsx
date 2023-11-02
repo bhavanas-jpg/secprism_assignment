@@ -11,9 +11,6 @@ const ProjectDetails = () => {
   const project = projects.find(project => project.id === Number(id));
   const {projectDetails} = project;
   const {project_id, project_name ,description,status, current_release, current_details} = projectDetails ?? {};
-
-
-  console.log(id);
   return (
     <div className="project__container">
      <div className="nav__item">
@@ -23,7 +20,7 @@ const ProjectDetails = () => {
           className='back__arrow'
           onClick={()=>navigate("/")} />
           Projects</h3>
-        <Sidebar />
+        <Sidebar id={id}/>
       </div>
       <div className="projectlist__sec">
       <p className="project">Projects/<span className="project__selected">{project_name}</span></p>
