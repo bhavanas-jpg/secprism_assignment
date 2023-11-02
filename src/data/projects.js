@@ -9,7 +9,7 @@ export const projects = [
      updated_date: "25 July 2023",
      updated_time: "19:00:00",
      project_status: "Active",
-     project_details: {
+     projectDetails: {
         project_id: "XYZ2345",
         project_name: "ABC Project",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis fermentum sapien nec interdum. Phasellus vitae enim libero. Vivamus pellentesque imperdiet diam, sit amet vestibulum risus vulputate vel. Morbi fringilla diam eu dignissim facilisis. Aenean porta maximus felis ut fermentum. Etiam rhoncus magna eu tellus pretium viverra. Fusce efficitur laoreet vehicula. Pellentesque vitae turpis justo. Cras bibendum sapien nisi, sit amet consectetur est hendrerit et.",
@@ -28,7 +28,7 @@ export const projects = [
         updated_date: "15 July 2023",
         updated_time: "19:00:00",
         project_status: "Completed",
-        project_details: {
+        projectDetails: {
            project_id: "ABC2345",
            project_name: "ABC Project",
            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis fermentum sapien nec interdum. Phasellus vitae enim libero. Vivamus pellentesque imperdiet diam, sit amet vestibulum risus vulputate vel. Morbi fringilla diam eu dignissim facilisis. Aenean porta maximus felis ut fermentum. Etiam rhoncus magna eu tellus pretium viverra. Fusce efficitur laoreet vehicula. Pellentesque vitae turpis justo. Cras bibendum sapien nisi, sit amet consectetur est hendrerit et.",

@@ -9,7 +9,7 @@ const columns = [
     headerName: "Name", 
     width: 300,
     renderCell: (params) =>(
-      <Link>{params.value}</Link>
+      <Link to={`/projectDetails/${params.row.id}`}>{params.value}</Link>
     )
   },
     { field: "created", headerName:"Created", width: 200},

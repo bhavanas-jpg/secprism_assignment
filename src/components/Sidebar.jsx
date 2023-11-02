@@ -1,23 +1,32 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div>
-        <ul>
-            <li>Overview</li>
-            <li>Members</li>
-            <li>Resources</li>
-            <li>Releases</li>
-            //dropdown
-            <li>Security Activities</li>
-            <span>Policies and Standards</span>
-            <span>Trainings and Awareness</span>
-           <li>Security Deviations</li>
-           <li>Configure</li>
-           <span>Email Templates</span>
-        </ul>
-    </div>
-  )
-}
+      <ul className="sidebar">
+        <li>
+          <NavLink className="sidebar__item">Overview</NavLink>
+        </li>
+        <li>
+          <NavLink className="sidebar__item">Members</NavLink>
+        </li>
+        <li>
+          <NavLink className="sidebar__item">Resources</NavLink>
+        </li>
+        <li>
+          <NavLink className="sidebar__item">Releases</NavLink>
+        </li>
+      </ul>
 
-export default Sidebar
+      <li>Security Activities</li>
+      <span>Policies and Standards</span>
+      <span>Trainings and Awareness</span>
+      <li>Security Deviations</li>
+      <li>Configure</li>
+      <span>Email Templates</span>
+    </div>
+  );
+};
+
+export default Sidebar;

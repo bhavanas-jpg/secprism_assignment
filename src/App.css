@@ -1,3 +1,7 @@
+ul li{ 
+  list-style: none;
+}
+
 .header__container{
   background-color: rgb(23,37,66);
   color: #fff;
@@ -34,4 +38,41 @@
 .btn__container{
   display: flex;
   justify-content: flex-end;
+}
+.input__container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+label{
+  margin-bottom: 8px;
+}
+input{
+  padding: 10px;
+}
+.action__btns{
+  display: flex;
+  justify-content: flex-end;
+}
+.projectlist__container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+}
+.back__arrow{
+  cursor: pointer;
+}
+.sidebar__item{
+  text-decoration: none;
+}
+.projectdetail__content div{
+  display: inline-flex;
+}
+.description{
+  width: 600px;
+  text-align: justify;
 }
