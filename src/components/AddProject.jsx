@@ -20,6 +20,12 @@ const AddProject = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [createProject, setCreateProject] = useState("")
+
+  const addProject=(e,project)=>{
+e.preventDefault();
+handleClose();
+  }
 
   return (
     <>
@@ -37,18 +43,24 @@ const AddProject = () => {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Add Project
           </Typography>
+          <form onSubmit={(e)=> addProject(e,createProject)}>
           <div className="input__container">
+           
             <label>Project name</label>
-            <input type="text" placeholder="Enter Project name" />
+            <input 
+            onChange={(e)=> setCreateProject(e.target.value)}
+            type="text" placeholder="Enter Project name" />
           </div>
           <div className="action__btns">
-            <Button variant="contained" size="small">
+            <Button variant="contained"
+            type="submit" size="small">
               Create
             </Button>
             <Button onClick={handleClose} size="small">
               Cancel
             </Button>
           </div>
+          </form>
         </Box>
       </Modal>
     </>
