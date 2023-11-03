@@ -138,3 +138,8 @@ input{
   color: rgb(23,37,66);
     font-weight: bold;
 }
+.editform{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
